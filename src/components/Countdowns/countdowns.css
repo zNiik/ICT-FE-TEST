@@ -1,0 +1,30 @@
+.countdowns {
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.countdowns--is-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdowns-list {
+    display: grid;
+    gap: 16px;
+}
+
+
+@media (min-width: 380px) {
+    .countdowns-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .countdowns-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
